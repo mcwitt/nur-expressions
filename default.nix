@@ -11,6 +11,7 @@
 {
   # The `lib`, `modules`, and `overlay` names are special
   lib = import ./lib { inherit pkgs; }; # functions
+  hmModules = import ./hm-modules; # home-manager modules
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
